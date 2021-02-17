@@ -1,0 +1,12 @@
+<mat-toolbar color="primary">
+  <button mat-button (click)='_navigateTo("home")'>
+    <!-- place an icon here #:, make a link to home -->
+    #:HashColon
+  </button>
+  <button mat-button *ngFor='let item of moduleList' (click)='_navigateTo(item)'>
+    {{item.name}}
+  </button>
+</mat-toolbar>
+<div class="contents">
+  <router-outlet></router-outlet>
+</div>

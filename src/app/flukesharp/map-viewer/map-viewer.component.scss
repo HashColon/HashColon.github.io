@@ -1,0 +1,40 @@
+ 
+// .map-sidenav {        
+//     width: 20vw;    
+// }
+
+.map-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    
+}
+
+.map {
+    /*position: relative;*/
+    height: 90vh;
+    /*width: 100%;*/
+    padding: 0;
+    z-index: 0;  
+}
+
+.sidenav-toggler {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.picker{
+    max-width: 30em !important;
+}
+
+.windowResizer{
+    width: 15em;
+    max-width: 15em !important;
+}
+
+.windowResizerSlider{
+    //height: 15em;
+    width: 15em !important;
+}

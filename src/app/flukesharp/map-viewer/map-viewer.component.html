@@ -1,0 +1,46 @@
+<mat-sidenav-container>
+    <mat-sidenav #sidenavtree mode="side" position="end" opened="false" class="map-sidenav"
+        [style.width]="sideNavWidth">
+        <fluke-layer-viewer></fluke-layer-viewer>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        <mat-toolbar class="map-footer">
+
+            <mat-menu #picker="matMenu" [hasBackdrop]="false" class="picker">
+                <mat-card class="picker">
+                    <mat-slide-toggle color="primary" checked="false" [(ngModel)]="togglePickPos"
+                        (click)="$event.stopPropagation();">
+                        {{togglePickPos?'Picker(place marker)':'Picker(marker disabled)'}}
+                    </mat-slide-toggle>
+                    <fluke-layer-editor-marker></fluke-layer-editor-marker>
+                </mat-card>
+            </mat-menu>
+
+            <mat-menu #windowResizer="matMenu" [hasBackdrop]="false" class="windowResizer">
+                <mat-slider invert min="10" max="40" step="1" [(ngModel)]="sliderVal" (change)='_sideNavWidthChange()'
+                    (click)="$event.stopPropagation();" class="windowResizerSlider">
+                </mat-slider>
+            </mat-menu>
+
+            <mat-button-toggle multiple color="primary">
+
+                <mat-button-toggle [matMenuTriggerFor]="picker" matTooltip="Show position picker">
+                    <mat-icon>room</mat-icon>
+                </mat-button-toggle>
+                <mat-button-toggle [matMenuTriggerFor]="windowResizer" matTooltip="Resize side window">
+                    <mat-icon>settings_ethernet</mat-icon>
+                </mat-button-toggle>
+
+                <mat-button-toggle (change)="sidenavtree.toggle()" matTooltip="Show layer list">
+                    Layers
+                </mat-button-toggle>
+            </mat-button-toggle>
+
+        </mat-toolbar>
+
+        <div class="map" leaflet [leafletOptions]="options" [leafletLayers]="layers.visible"
+            (leafletMapReady)="onMapReady($event)" (leafletClick)="onMapClick($event)">
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
