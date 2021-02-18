@@ -1,0 +1,17 @@
+.full-width{
+    width: calc(100% - 20px);
+}
+
+.dirinput{
+    margin: 10px;
+}
+
+.autocompletelist{
+    font-size: 1em;
+    height: 2em;
+}
+
+mat-selection-list{
+    max-height: calc(100vh - 175px);
+    overflow: auto;
+}
