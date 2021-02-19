@@ -9,7 +9,7 @@ export var moduleList: moduleListType[] = [
         name: 'test',
         imgsrc: '',
         explanation: 'Simple version of FlukeSharp viewer. Can visualize trajectories such as navigational route. Developed based on leaflet js.',
-        link: '/test'
+        link: '/blog/viewer'
     },
     {
         name: 'Blog',
