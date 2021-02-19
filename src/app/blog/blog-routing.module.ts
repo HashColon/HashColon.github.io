@@ -5,7 +5,7 @@ import { HashcolonBlogHomeComponent } from '@HashColon/blog/hashcolon-blog-home.
 import { HashcolonBlogViewerComponent } from '@HashColon/blog/hashcolon-blog-viewer.component';
 
 const routes: Routes = [
-  { path: 'blog', redirectTo: '/blog/home', pathMatch: 'full' },
+  { path: 'blog', redirectTo: '/blog/viewer', pathMatch: 'full' },
   { path: 'blog/home', component: HashcolonBlogHomeComponent },
   { path: 'blog/viewer', component: HashcolonBlogViewerComponent }
 ];
