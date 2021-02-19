@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import * as mds from '@HashColon/hashcolon-modulelist';
+import * as mds from '@HashColon/hashcolon-modulelist'
 
 @Component({
   selector: 'app-home',
