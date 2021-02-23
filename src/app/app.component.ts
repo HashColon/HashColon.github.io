@@ -19,7 +19,6 @@ export class AppComponent {
     if (typeof item == 'string') {
       this.router.navigate([item]);
     } else if (item.link) {
-      console.log('2');
       this.router.navigate([item.link]);
     }
   }

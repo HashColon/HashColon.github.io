@@ -22,6 +22,9 @@
       ],
       "@fluke/*": [
         "src/app/flukesharp/src/app/*"
+      ],
+      "@blog/*": [
+        "src/app/blog/*"
       ]
     }
   }
