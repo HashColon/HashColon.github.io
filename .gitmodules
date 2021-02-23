@@ -1,3 +1,6 @@
 [submodule "src/app/flukesharp"]
 	path = src/app/flukesharp
 	url = https://github.com/HashColon/FlukeSharp.git
+[submodule "src/app/blog"]
+	path = src/app/blog
+	url = https://github.com/HashColon/HashColon.blog.git
