@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { BackendConnectorService } from '@HashColonBackend/backend-connector.service';
 
 import * as mds from '@HashColon/hashcolon-modulelist';
 
@@ -13,7 +14,9 @@ export class AppComponent {
   title = 'HashColon.github.io';
   moduleList = mds.moduleList;
 
-  constructor(private router: Router) { }
+  constructor(
+    private router: Router,
+    public backend: BackendConnectorService) { }
 
   _navigateTo(item) {
     if (typeof item == 'string') {

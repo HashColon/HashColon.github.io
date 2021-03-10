@@ -6,7 +6,20 @@
   <button mat-button *ngFor='let item of moduleList' (click)='_navigateTo(item)'>
     {{item.name}}
   </button>
+
+  <span class="spacer"></span>
+
+  <button mat-mini-fab color="basic" [matMenuTriggerFor]="backendConnector" matTooltip="Set backend server connection">
+    <mat-icon [color]="backend.isSocketReady?'accent':'warn'">dynamic_form
+    </mat-icon>
+  </button>
+
 </mat-toolbar>
 <div class="contents">
   <router-outlet></router-outlet>
 </div>
+
+<mat-menu #backendConnector="matMenu" [hasBackdrop]="false" (click)="$event.stopPropagation();"
+  class="backendConnector">
+  <hashcolon-backend-connector-viewer></hashcolon-backend-connector-viewer>
+</mat-menu>
