@@ -10,6 +10,7 @@ import { FlukeSharpModule } from '@fluke/flukesharp.module';
 import { FlukeSharpRoutingModule } from '@fluke/flukesharp.routing.module';
 import { BlogModule } from '@blog/blog.module';
 import { BlogRoutingModule } from '@blog/blog-routing.module';
+import { BackendConnectorModule } from '@HashColonBackend/backend-connector.module';
 import { HomeComponent } from './home/home.component';
 
 import { TestComponent } from './test/test.component';
@@ -27,8 +28,8 @@ import { TestComponent } from './test/test.component';
     MaterialModule,
 
     FlukeSharpModule, FlukeSharpRoutingModule,
-    BlogModule, BlogRoutingModule
-
+    BlogModule, BlogRoutingModule,
+    BackendConnectorModule
   ],
   providers: [],
   bootstrap: [AppComponent]

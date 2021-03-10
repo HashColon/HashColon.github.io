@@ -61,7 +61,7 @@ let LayerViewerComponent = class LayerViewerComponent {
                     //   console.log(filelist[fidx].name + ' validated');
                     // }
                 }
-                this.manager.pushLayer(new GeoJSON(geojson), filelist[fidx].name, { forced: true });
+                this.manager.pushGeoJsonLayer(geojson, filelist[fidx].name, { forced: true });
                 console.log(filelist[fidx].name + ' loaded as layer to leaflet-map');
             };
             fileReader.readAsText(filelist[fidx]);

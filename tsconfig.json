@@ -23,8 +23,14 @@
       "@fluke/*": [
         "src/app/flukesharp/src/app/*"
       ],
+      "@HashColonBackend/*": [
+        "src/app/backendconnector/src/app/*"
+      ],
       "@blog/*": [
         "src/app/blog/src/app/*"
+      ],
+      "@blog-builder/*": [
+        "src/app/blog.builder/*"
       ]
     }
   }

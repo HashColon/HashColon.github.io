@@ -1,1 +1,12 @@
-[]
+{
+    "aaa": {
+        "aaa1": "assets/blog/test.page",
+        "aaa2": "assets/blog/test.page",
+        "aaa3": "assets/blog/test.page",
+        "aaa4": "assets/blog/test.page"
+    },
+    "bbb": {
+        "bbb1": "assets/blog/test2.page",
+        "bbb2": "assets/blog/test3.page"
+    }
+}

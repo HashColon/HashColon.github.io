@@ -34,15 +34,19 @@
               {
                 "glob": "**/*",
                 "input": "node_modules/leaflet/dist/images/", // you may need to change this path, according to your files structure
-                "output": "./"
+                "output": "./highlight.js/styles/"
               }
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
               "./node_modules/leaflet/dist/leaflet.css",
+              "./node_modules/highlight.js/styles/atom-one-dark.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "allowedCommonJsDependencies": [
+              "highlight.js"
+            ]
           },
           "configurations": {
             "production": {

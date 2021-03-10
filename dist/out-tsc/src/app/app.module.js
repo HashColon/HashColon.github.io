@@ -7,8 +7,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from '@HashColon/material.module';
 import { FlukeSharpModule } from '@fluke/flukesharp.module';
 import { FlukeSharpRoutingModule } from '@fluke/flukesharp.routing.module';
-import { BlogModule } from '@HashColon/blog/blog.module';
-import { BlogRoutingModule } from '@HashColon/blog/blog-routing.module';
+import { BlogModule } from '@blog/blog.module';
+import { BlogRoutingModule } from '@blog/blog-routing.module';
+import { BackendConnectorModule } from '@HashColonBackend/backend-connector.module';
 import { HomeComponent } from './home/home.component';
 import { TestComponent } from './test/test.component';
 let AppModule = class AppModule {
@@ -26,7 +27,8 @@ AppModule = __decorate([
             BrowserAnimationsModule,
             MaterialModule,
             FlukeSharpModule, FlukeSharpRoutingModule,
-            BlogModule, BlogRoutingModule
+            BlogModule, BlogRoutingModule,
+            BackendConnectorModule
         ],
         providers: [],
         bootstrap: [AppComponent]

@@ -24,7 +24,7 @@ let LayerEditorGeojsonComponent = class LayerEditorGeojsonComponent {
     }
     _editLayer() {
         try {
-            this.manager.editLayer(new GeoJSON(JSON.parse(this.formControl.value)), this.label);
+            this.manager.editGeoJsonLayer(JSON.parse(this.formControl.value), this.label);
         }
         catch (e) {
             //console.log('_editLayer: ' + this.formControl.value);

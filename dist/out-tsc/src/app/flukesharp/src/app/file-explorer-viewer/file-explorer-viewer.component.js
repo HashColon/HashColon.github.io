@@ -1,7 +1,7 @@
 import { __decorate } from "tslib";
 import { Component } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { FlukeSharpMessageType } from '@fluke/services/flukesharp-message';
+import { HashColonMessageType } from '@HashColonBackend/hashcolon-message';
 import { GeoJSON } from 'leaflet';
 var msgtype;
 (function (msgtype) {
@@ -31,7 +31,7 @@ let FileExplorerViewerComponent = class FileExplorerViewerComponent {
                 catch (e) {
                     console.error('Parsing returned message failed');
                 }
-                if (parsedJson.messageType == FlukeSharpMessageType.error) {
+                if (parsedJson.messageType == HashColonMessageType.error) {
                     switch (this.msgKeyList[parsedJson.messageKey]) {
                         case msgtype.dirlist:
                         case msgtype.filelist:
@@ -40,7 +40,7 @@ let FileExplorerViewerComponent = class FileExplorerViewerComponent {
                             console.log(parsedJson.messageContent);
                     }
                 }
-                else if (parsedJson.messageType == FlukeSharpMessageType.return) {
+                else if (parsedJson.messageType == HashColonMessageType.return) {
                     switch (this.msgKeyList[parsedJson.messageKey]) {
                         case msgtype.dirlist:
                             this.retrieveDirList(parsedJson);

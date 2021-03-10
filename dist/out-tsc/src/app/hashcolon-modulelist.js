@@ -11,7 +11,7 @@ export var moduleList = [
         name: 'Blog',
         imgsrc: '',
         explanation: 'My blog',
-        link: '/blog'
+        link: '/blog/viewer'
     },
     {
         name: 'FlukeSharp',
