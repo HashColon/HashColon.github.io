@@ -4,3 +4,12 @@
 [submodule "src/app/blog"]
 	path = src/app/blog
 	url = https://github.com/HashColon/HashColon.blog.git
+[submodule "src/app/blog.builder"]
+	path = src/app/blog.builder
+	url = https://github.com/HashColon/HashColon.blog.builder.git
+[submodule "HashColon.BackendConnector"]
+	path = HashColon.BackendConnector
+	url = https://github.com/HashColon/HashColon.BackendConnector.git
+[submodule "src/app/backendconnector"]
+	path = src/app/backendconnector
+	url = https://github.com/HashColon/HashColon.BackendConnector.git
